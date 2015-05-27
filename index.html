@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Links Auto Replacer Documentation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Links Auto Replacer
+                    </a>
+                </li>
+                <li>
+                    <a href="#overview">Overview</a>
+                </li>
+                <li>
+                    <a href="#installation">Installation</a>
+                </li>
+                <li>
+                    <a href="#settings">Settings</a>
+                </li>
+                <li>
+                    <a href="#links_management">Links Management</a>
+                </li>
+                <li>
+                    <a href="#internal_linking">Internal Linking <span>PRO</span></a>
+                </li>
+                <li>
+                    <a href="#statistics">Statistics <span>PRO</span></a>
+                </li>
+              
+                <li>
+                    <a href="#support">Support</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8" id="overview">
+
+                    <div id="overview">
+                        <h1>Overview</h1>
+                        <img style="width:100%" src="images/head.png">
+                        <p>Links Auto Replacer is a WordPress plugin that helps you to replace a specific keywords to links automatically.
+                            Are you tired of linking websites in your post? This plugin will solve your problem. Link your keywords once and forget about them.
+
+                            Are you an affiliate marketer, you don't have to insert your affiliate links manually every time you write a blog post.
+                        </p>
+
+                        
+                    </div>
+
+                    <div id="installation">
+                        <h1>Installation</h1>    
+                        
+
+                        <h3>Using The WordPress Dashboard</h3>
+                        <ul>
+                            <li>Navigate to the 'Add New' in the plugins dashboard</li>
+                            <li>Search for 'Links Auto Replacer'</li>
+                            <li>Click 'Install Now'</li>
+                            <li>Activate the plugin on the Plugin dashboard</li>
+                        </ul>
+                        <h3>Uploading in WordPress Dashboard</h3>
+                        <ul>
+                            <li>Navigate to the 'Add New' in the plugins dashboard</li>
+                            <li>Navigate to the 'Upload' area</li>
+                            <li>Select lar-links-auto-replacer.zip from your computer</li>
+                            <li>Click 'Install Now'</li>
+                            <li>Activate the plugin in the Plugin dashboard</li>
+                        </ul>
+
+                        <h3>Using FTP</h3>
+
+                        <ul>
+                            <li>Download lar-links-auto-replacer.zip</li>
+                            <li>Extract the lar-links-auto-replacer directory to your computer</li>
+                            <li>Upload the lar-links-auto-replacer directory to the /wp-content/plugins/ directory</li>
+                            <li>Activate the plugin in the Plugin dashboard</li>
+                        </ul>
+
+                    </div>
+
+                    <div id="settings">
+                        <h1>Settings</h1>
+                        <img src="images/W001.png">
+                        <p>
+                            Links Auto Replacer comes with several settings to make you take full control of the plugin, thus I will add more settings to cope with the new features. I will add more and more features in the next releases, so stay tuned :)
+                        </p>
+                        <ul>
+                            <li><strong>Enable Auto Replcement:</strong> This option is a global switch for the plugin, If you want to disable the replacement of the keywords temporiraly without deactivating the whole plugin, you just need to uncheck this option.</li>
+                            <li><strong>Dofollow?</strong> if you checked this option, you will allow search engines to follow this link and use it in ranking. It's simply add (rel=nofollow) if you unchecked it.</li>
+                            <li><strong>Open in</strong> When the visitor click on the link, it's either open in a new window or the same window.</li>
+                            <li><strong>Shrink?</strong> If you checked this option, the link will be shortened.</li>
+                            <li><strong>Case Sensitive?</strong> The plugin will replace the keywords exactly according to the letters case.</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div id="links_management">
+                        <h1>Auto Links Management</h1>
+                        <img src="images/W002.png">
+                        <h3>Auto Links Table</h3>
+                        <p>
+                           This is the table where you find all your links, from this page you can (edit,delete) the link. Also, It will show the keywords of the link, the original link. You can go to this page from the Admin Menu (Auto Links --> All Auto Links)
+                        </p>
+                        <h3>Add Auto Link</h3>
+                        <h5>"Auto Links" &#8611; "Add New Auto Link"</h5>
+                        <img src="images/W003.png">
+                        <p>This is the main page where you will add the links with the keywords.
+
+                        <ol>
+                            <li>You can add one keywords or multiple keywords. To add another keyword, click on "Add Row" button and a text new text box will show up. Another keyword? click again on "Add Row"</li>
+                            <li>Now Add the required URL, When the visitor click on the keyword that you previously added, the plugin will take him to this URL.</li>
+                            <li>The other options I explained them in the <a href="#settings">Settings</a> section</li>
+                            <li>Last thing, There is an option called slug, This one is disabled by default, but if you choosed to "shrink" the link, this option will be activated with an auto generated text, you can change it if you want. </li>
+                        </ol>
+
+                        </p>
+                    </div>
+
+                    
+
+
+                    <div id="internal_linking">
+                        <h1>Internal Linking <span>PRO Feature</span></h1>
+                        <img src="images/W004.png">
+                        <p>The <a href="http://www.waseem-senjer.com/product/links-auto-replacer-pro">PRO version</a> of the plugin has a cool feature, For example, if you want to link the keywords to a specific post or page, you only need to change the link type to "internal" and then choose the post or page by typing its title in the bottom select list as you see in the image above.</p>
+                    </div>
+
+
+
+                    <div id="statistics">
+                        <h1>Statistics <span>PRO Feature</span></h1>
+                        <img src="images/W005.png">
+                        <img src="images/W006.png">
+                        <p>
+                            Even if the link was external, the plugin will be able to track the link and provides you with many statistics (Visits per day, Countries, Browsers, Operating Systems ). I will add more features in the statistics page in order to provide the plugin user of the maximum benefits of statistics and tracking.
+                        </p>
+                    </div>
+
+                    
+ 
+                      <div id="support">
+                        <h1>Support</h1>
+                        <p>
+                            Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do you feel talking about coffee or how the dinosaurs got extinct? - I'm serious -. Do NOT hesitate dropping me <a href="http://waseem-senjer.com/submit-ticket/">a support ticket</a>.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+ 
+
+ <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+   
+   
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

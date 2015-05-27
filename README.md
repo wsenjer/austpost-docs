@@ -1,2 +1,2 @@
-# austpost-docs
-Australia Post Extension Documentation
+# lar-docs
+Links Auto Replacer Documentations 
