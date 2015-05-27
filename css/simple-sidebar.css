@@ -94,9 +94,11 @@ img {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
+   
     font-size: 18px;
-    line-height: 60px;
+    height: 100px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .sidebar-nav > .sidebar-brand a {
