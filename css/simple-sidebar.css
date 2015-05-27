@@ -96,9 +96,10 @@ img {
 .sidebar-nav > .sidebar-brand {
    
     font-size: 18px;
-    height: 100px;
+    height: 78px;
   line-height: 24px;
   text-align: center;
+  padding-top: 20px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -139,9 +140,20 @@ img {
 }
 
 h1 span{
-    font-size: 10pt;
+    font-size: 14pt;
     color: #ffffff;
     background: #CBCBCB;
     padding: 5px;
     border-radius: 5px;
+}
+
+ul li span{
+    font-size: 10pt;
+    color: #ff0000;
+    
+    padding: 5px;
+    
+}
+ul#settings_lst li{
+    margin-top: 10px;
 }
