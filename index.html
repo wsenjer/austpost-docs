@@ -52,6 +52,9 @@
                     <a href="#satchels">Satchels <span>PRO</span></a>
                 </li>
                 <li>
+                    <a href="#troubleshooting">Troubleshooting</a>
+                </li>
+                <li>
                     <a href="#support">Support</a>
                 </li>
                 
@@ -87,7 +90,7 @@
                         </ul>
                         <h3>Uploading in WordPress Dashboard</h3>
                         <ul>
-                            <li>Download the plugin zip file from <a href="https://wordpress.org/plugins/australian-post-woocommerce-extension/">here</a></li>
+                            <li>Download the plugin zip file from <a href="https://wordpress.org/plugins/australian-post-woocommerce-extension/">here</a>, In case of the PRO version you can find the files in the order email which was sent to you after the purchase.</li>
                             <li>Navigate to the 'Add New' in the plugins dashboard</li>
                             <li>Navigate to the 'Upload' area</li>
                             <li>Select australia-post-woocommerce-extension.zip from your computer</li>
@@ -108,19 +111,22 @@
 
                     <div id="settings">
                         <h1>Settings</h1>
+                        <p>
+                             You can find the plugin's settings in WooCommerce -> Settings -> Shipping -> Australian Post
+                        </p>
                         <img src="images/W001.png">
                         <p>
-                            WooCommerce Australia Post Extension comes with several settings to make you take full control of the plugin.
+                            WooCommerce Australia Post Extension comes with several settings to make you take full control of the plugin. 
                         </p>
                         <ul id="settings_lst">
                             <li>Once the plugin has been activated, go to WooCommerce > Settings > Shipping.
 The method will be listed at the top of the screen, underneath the tabs. Click on ‘Australian Post’</li>
                             <li><strong>Enable/Disable </strong> Choose whether to enable the shipping method of not.</li>
                             <li><strong>Method Title</strong> Name the shipping method. This will be visibile by customers.</li>
+                            <li><strong>Debug Mode</strong><span>*</span>Enabling debug mode will allow administrators to test the shipping method on their website before show it to public.</li>
                             <li><strong>API Key</strong> Get this from Australia Post or leave it to use our API Key.</li>
-                            <li><strong>Shop Origin Post Code</strong> This should be set to the postcode from which you will ship. It is sent to the Australia Post API.</li>
+                            <li id="shop_origin_postcode"><strong>Shop Origin Post Code</strong> This should be set to the postcode from which you will ship. It is sent to the Australia Post API.</li>
                             <li><strong>Handling Fees</strong><span>*</span> If you carge handling fees, you can add it from here either by adding a fixed number or a percentage (e.g. 2.5 or 2%)</li>
-                            <li><strong>Tax Status</strong> Choose whether the plugin should calcualate the shipping rate with taxes or not.</li>
                             <li><strong>Default Package Weight</strong>The default weight of the package, If you didn't set the weight in the `Add New Product` page. This weight will be used to calculate the shipping fees.</li>
                             <li><strong>Default Package Width</strong> The default width of the package, If you didn't set the width in the `Add New Product` page. This width will be used to calculate the shipping fees.</li>
                             <li><strong>Default Package Height</strong> The default height of the package, If you didn't set the height in the `Add New Product` page. This height will be used to calculate the shipping fees.</li>
@@ -130,6 +136,10 @@ The method will be listed at the top of the screen, underneath the tabs. Click o
                             <li><strong>Method availability</strong><span>*</span> If you want to restrict the use of Australia Post shipping to a specific countries, use this option.</li>
                             <li><strong>Signature on Delivery</strong><span>*</span> If you want to charge the buyer the cost of (Signature on Delivery) service, you can enable it from this option.</li>
                             <li><strong>Rates</strong><span>*</span> Choose to return all rates (user will get the choice) or just the cheapest rate.</li>
+                            <li><strong>Delivery Time</strong><span>*</span> Enable the display of delivery time for customers.</li>
+                            <li><strong>Packing Table (beta)</strong><span>*</span> This option will display a table which illustrates the best way to package the order in the order's page. This feature is still under development so your feedback about it is desired.</li>
+                             <li><strong>Letters</strong><span>*</span> Enable this if you ship small products that fit in letters envelops. The letters standards are given by Australia Post.</li>
+
                             <li style="list-style:none;"><span>*</span> PRO feature</li>
                         </ul>
 
@@ -154,13 +164,26 @@ The method will be listed at the top of the screen, underneath the tabs. Click o
 
 
 
-
+                    <div id="troubleshooting">
+                        <h1>TroubleShooting</h1>
+                        <h3>In case the plugin didn't return any shipping rates.</h3>
+                        <ul>
+                            <li>Update the plugin to the latest version.</li>
+                            <li>Make sure that the plugin and the shipping method is enabled</li>
+                            <li>Make sure to set the <a href="#shop_origin_postcode">shop origin postcode</a>.</li>
+                            <li>In the checkout page, make sure that you fill all the required address fields, especially the postcode.</li>
+                        </ul>
+                        <h3>In case you fixed a problem in the shipping rates and still the plugin didn't return any rates.</h3>
+                        <ul>
+                            <li>Go to WooCommerce -> System Status -> Tools -> Then click on the `Clear transients` button.</li>
+                        </ul>
+                    </div>
 
 
                       <div id="support">
                         <h1>Support</h1>
                         <p>
-                            Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do you feel talking about coffee or how the dinosaurs got extinct? - I'm serious -. Do NOT hesitate dropping me <a href="http://waseem-senjer.com/submit-ticket/">a support ticket</a>.
+                            Do you have any problem? Did you encounter a bug in the plugin? Do you need a new feature to be included in the plugin? Do not hesitate dropping me <a href="http://waseem-senjer.com/submit-ticket/">a support ticket</a>.
                         </p>
 
                     </div>
